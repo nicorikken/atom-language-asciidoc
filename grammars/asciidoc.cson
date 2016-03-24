@@ -48,8 +48,7 @@
   # ========================
   #
   {
-    'begin': '^\\.(\\w[\\w ]*\\w)'
-    'end': '$'
+    'match': '(?<=^\\.)(\\w.+)(?=$)'
     'captures':
       '1': 'name': 'markup.heading.blocktitle.asciidoc'
   }
