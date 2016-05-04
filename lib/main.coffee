@@ -45,7 +45,7 @@ module.exports =
       if debug
         console.log CSON.stringify rootGrammar
       helper.writeGrammarFile rootGrammar, 'language-asciidoc.cson', do ->
-        atom.commands.dispatch 'body', 'window:reload'
+        atom.commands.dispatch 'body'
 
     deactivate: ->
       @subscriptions.dispose()

@@ -345,6 +345,18 @@ repository:
         captures:
           "2":
             name: "support.constant.footnote.inline.asciidoc"
+        patterns: [
+          {
+            match: "\\G[^\\]]*"
+            captures:
+              "0":
+                patterns: [
+                  {
+                    include: "#inlines"
+                  }
+                ]
+          }
+        ]
       }
     ]
   "general-block-macro":
